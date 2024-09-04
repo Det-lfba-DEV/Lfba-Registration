@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Club Registration | Det.lfba</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <meta property="og:title" content="Application Form | Det.lfba">
+    <meta property="og:description" content="Submit for hiring Application">
+    <meta name="description" content="Det.lfba -> Submit for hiring Application">
+    <meta property="og:image" content="https://scontent.xx.fbcdn.net/v/t1.15752-9/455704430_862590252484541_3997455116230864515_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=bBTGf-OMHjAQ7kNvgGPfXsX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFLogv2DaTpIvY6Lk3fD_4mrcqRjAiDJPFzwTI7LlLNlQ&oe=66EFB8FD">
+    <meta name="twitter:title" content="Application Form | Det.lfba">
+    <meta name="twitter:description" content="Submit for hiring Application">
+    <meta name="twitter:image" content="https://scontent.xx.fbcdn.net/v/t1.15752-9/455704430_862590252484541_3997455116230864515_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=bBTGf-OMHjAQ7kNvgGPfXsX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFLogv2DaTpIvY6Lk3fD_4mrcqRjAiDJPFzwTI7LlLNlQ&oe=66EFB8FD">
+    <style>
+        body {
+            background: url('giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            transition: background-image 1s ease-in-out;
+            color: #f2f2f2;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin: 20% auto;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #333;
+            border-bottom: 1px solid #444;
+            font-size: 1.5em;
+            text-align: center;
+            color: #f2f2f2;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            background-color: White;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .form-control {
+            background-color: #333;
+            border: 1px solid #555;
+            color: #f2f2f2;
+        }
+
+        .form-control:focus {
+            background-color: #444;
+            color: #fff;
+            border-color: #666;
+            box-shadow: none;
+        }
+
+        .btn-primary {
+            background-color: #0066cc;
+            border-color: #0066cc;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #005bb5;
+            border-color: #005bb5;
+        }
+
+        .btn-outline-secondary {
+            color: #bbb;
+            border-color: #bbb;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #bbb;
+        }
+
+        @media (max-width: 576px) {
+            .card {
+                margin-top: 30%;
+            }
+        }
+        q{
+            font-size: 18px;
+            font-style: italic;
+            font-weight:400;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="justify-content-center align-items-center">
+            <div class="card">
+                <div class="card-header">
+                    <h1>
+                        Hiring Form Application
+                    </h1>
+                </div>
+                <div class="card-body">
+                    <form id="contact-form" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input required type="text" name="name" class="form-control" id="Name" placeholder="Enter Your Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input required type="email" name="email" class="form-control" id="Email" placeholder="Enter Your Email-Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input required type="text" name="phone" class="form-control" id="Number" placeholder="Enter Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="class-select">Class:</label>
+                            <select required class="form-control" name="year" id="class-select">
+                                <option value="">--Please Select class--</option>
+                                <option class="form-check-input" value="1ere">1ere</option>
+                                <option class="form-check-input" value="2eme">2eme</option>
+                                <option class="form-check-input" value="3eme">3eme</option>
+                                <option class="form-check-input" value="4eme">4eme</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question">Any Questions 🙋 ? </label>
+                            <teaxtarea required class="form-control" placeholder="Dont hesitate ask away the questions are submited speratly it's anonymous" name="question" id="question">
+                            </teaxtarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="sticky-botom">
+        <center>
+            <q>detlfba@gmail.com 2024-2025</q>
+        </center>
+    </footer>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#contact-form').on('submit', function (e) {
+                e.preventDefault();
+
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Please wait...',
+                    text: 'Sending your message',
+                    willOpen: () => {
+                        Swal.showLoading();
+                    },
+                    showConfirmButton: false,
+                    allowOutsideClick: false,
+                    background: "#333"
+                });
+
+                const formData = new FormData(this);
+
+                $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbylaYLjeJbY3_DotABhx2JnpD-2eBxzeLwpFaDuYj-ZLsUuoXkx-ROecSFHuhWPnOyo/exec',
+                    method: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        if (response.result === 'success') {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Form submitted!',
+                                text: 'Your information has been received.',
+                                background: "#333"
+                            });
+                            $('#contact-form')[0].reset(); // Reset form after successful submission
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Submission Failed',
+                                text: 'There was an error submitting your form. Please try again later.',
+                                background: "#333"
+                            });
+                        }
+                    },
+                    error: function () {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Form submitted!',
+                            text: 'Your information has been received.',
+                            background: "#333"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
