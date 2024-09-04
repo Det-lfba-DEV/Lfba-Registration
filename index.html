@@ -49,7 +49,7 @@
         }
 
         .card-body {
-            background-color: White;
+            background-color: #E3f3f3;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
@@ -116,11 +116,11 @@
                 <div class="card-body">
                     <form id="contact-form" method="POST">
                         <div class="form-group">
-                            <label for="name">Full Name:</label>
+                            <label for="name">Full Name:*</label>
                             <input required type="text" name="name" class="form-control" id="Name" placeholder="Enter Your Full Name">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address:</label>
+                            <label for="email">Email Address:*</label>
                             <input required type="email" name="email" class="form-control" id="Email" placeholder="Enter Your Email-Address">
                         </div>
                         <div class="form-group">
@@ -128,7 +128,7 @@
                             <input required type="text" name="phone" class="form-control" id="Number" placeholder="Enter Your Phone Number">
                         </div>
                         <div class="form-group">
-                            <label for="class-select">Class:</label>
+                            <label for="class-select">Class:*</label>
                             <select required class="form-control" name="year" id="class-select">
                                 <option class="form-check-input" value="">--Please Select class--</option>
                                 <option class="form-check-input" value="1ere">1ere</option>
@@ -139,7 +139,7 @@
                         </div>
                         <div class="form-group">
                             <label for="question">Any Questions 🙋 ? </label>
-                            <teaxtarea required class="form-control" placeholder="Dont hesitate ask away the questions are submited speratly it's anonymous" rows="5" cols="50" name="question" id="question">
+                            <teaxtarea placeholder="Dont hesitate ask away the questions are submited speratly it's anonymous" rows="5" cols="50" name="question" id="question">
                             </teaxtarea>
                         </div>
                         <div class="text-center">
